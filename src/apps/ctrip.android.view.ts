@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      desc: '点击"跳过广告"跳过开屏广告',
+      desc: '点击"跳过广告"区域跳过开屏广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 2,
@@ -17,8 +17,13 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="a"][text="跳过广告"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/1778585036842',
+          name: '跳过广告按钮',
+          matches:
+            '@LinearLayout > [vid="a"][text="跳过广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/1778585036842',
+            'https://i.gkd.li/i/1778643120092',
+          ],
         },
       ],
     },
