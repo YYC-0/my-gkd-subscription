@@ -12,13 +12,19 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 2,
       resetMatch: 'app',
-      activityIds: 'com.zhihu.android.app.ui.activity.LauncherActivity',
+      activityIds: [
+        'com.zhihu.android.app.ui.activity.LauncherActivity',
+        'com.zhihu.android.app.ui.activity.LaunchAdActivity',
+      ],
       rules: [
         {
           key: 0,
           matches:
             '[vid="btn_skip"][text^="跳过"][clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/27632237',
+          snapshotUrls: [
+            'https://i.gkd.li/i/27632237',
+            'https://i.gkd.li/i/1778644443806',
+          ],
         },
       ],
     },
