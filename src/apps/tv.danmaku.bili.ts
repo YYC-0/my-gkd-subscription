@@ -12,7 +12,6 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'tv.danmaku.bili.splash.ad.page.HotSplashActivity',
       rules: [
         {
           key: 0,
