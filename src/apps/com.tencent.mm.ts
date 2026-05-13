@@ -20,13 +20,6 @@ export default defineGkdApp({
           matches: '@FrameLayout > [text="跳过"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/1778655439575',
         },
-        {
-          key: 1,
-          name: '关闭按钮',
-          matches:
-            '[vid="gn"][desc="关闭"][clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/1778655439575',
-        },
       ],
     },
   ],
